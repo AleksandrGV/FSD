@@ -3,37 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Мобильное приложение, которое раскрасит ваши серые будни розовыми красками" />
-  <meta name="keywords" content="мобильно приложение, развлечения, впечатления" />
+  <meta name="description" content="Поиск жилья для комфортной работы и отдыха" />
+  <meta name="keywords" content="поиск номеров, жилья, отелей" />
   <title>FSD frontend education program.</title>
 </head>
 <body class="page__body">
   <header class="page__header">
+  <div class="container">
     <a href="#" class="page__logo"></a>
     <nav class="navigation">
       <ul class="navigation__list">
         <li class="navigation__item">
-          <a href="#" class="navigation__link">О нас</a>
+          <a href="#" class="link navigation__link">О нас</a>
         </li>
         <li class="navigation__item">
-          <a href="#" class="navigation__link">Услуги</a>
+          <a href="#" class="link navigation__link">Услуги</a>
         </li>
         <li class="navigation__item">
-          <a href="#" class="navigation__link">Вакансии</a>
+          <a href="#" class="link navigation__link">Вакансии</a>
         </li>
         <li class="navigation__item">
-          <a href="#" class="navigation__link">Новости</a>
+          <a href="#" class="link navigation__link">Новости</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link">Соглашения
-            ul
-          </a>
+          <a href="#" class="link navigation__link">Соглашения</a>
         </li>
       </ul>
     </nav>
+    <div class="page__user-office">
+      <a href="#" class="page__user-office-sign-in">войти</a>
+      <a href="#" class="page__user-office-sign-up">зарегистрироваться</a>
+    </div>
+  </div>
   </header>
-  <main class="page__main"></main>
+  <main class="page__main">
+    <h1 class="visually-hidden">Поиск жилья для работы и отдыха</h1>
+    <form action="#" class="form">
+      <div class="form__search">
+        <h2 class="form__search-title">Найдём номера под ваши пожелания</h2>
+        <ul class="list form__search-list">
+          <li class="form__search-item">
+            <label class="form__search-label" for="date-arrival">прибытие</label>
+            <input type="date" class="form__arrival" name="arrival" id="date-arrival">
+          </li>
+          <li class="form__search-item">
+            <label class="form__search-label" for="date-departure">выезд</label>
+            <input type="date" class="departure" name="departure" id="date-departure">
+          </li>
+          <li class="form__search-item">
+            <label class="form__search-label" for="number-guests" class="">гости</label>
+            <select name="guests" id="number-guests" class="form__search-select">
+              <option value="1">Сколько гостей</option>
+              <option value="2">взрослые</option>
+              <option value="3">дети</option>
+              <option value="4">младенцы</option>
+            </select>
+          </li>
+        </ul>
+        <button class="button form__search-button" type="submit">подобрать номер</button>
+      </div>
+    </form>
+    <p class="page__main-text">Лучшие номера для вашей работы, отдыха и просто вдохновения</p>
+  </main>
   <footer class="page__footer"></footer>
-  main.
 </body>
 </html>
