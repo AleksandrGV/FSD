@@ -1,70 +1,172 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Поиск жилья для комфортной работы и отдыха" />
   <meta name="keywords" content="поиск номеров, жилья, отелей" />
-  <title>FSD frontend education program.</title>
+  <link rel="stylesheet" href="css/style.css">
+  <title>FSD frontend education program. Landing page</title>
 </head>
+
 <body class="page__body">
-  <header class="page__header">
-  <div class="container">
-    <a href="#" class="page__logo"></a>
-    <nav class="navigation">
-      <ul class="navigation__list">
-        <li class="navigation__item">
-          <a href="#" class="link navigation__link">О нас</a>
-        </li>
-        <li class="navigation__item">
-          <a href="#" class="link navigation__link">Услуги</a>
-        </li>
-        <li class="navigation__item">
-          <a href="#" class="link navigation__link">Вакансии</a>
-        </li>
-        <li class="navigation__item">
-          <a href="#" class="link navigation__link">Новости</a>
-        </li>
-        <li class="navigation__item">
-          <a href="#" class="link navigation__link">Соглашения</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="page__user-office">
-      <a href="#" class="page__user-office-sign-in">войти</a>
-      <a href="#" class="page__user-office-sign-up">зарегистрироваться</a>
-    </div>
-  </div>
-  </header>
-  <main class="page__main">
-    <h1 class="visually-hidden">Поиск жилья для работы и отдыха</h1>
-    <form action="#" class="form">
-      <div class="form__search">
-        <h2 class="form__search-title">Найдём номера под ваши пожелания</h2>
-        <ul class="list form__search-list">
-          <li class="form__search-item">
-            <label class="form__search-label" for="date-arrival">прибытие</label>
-            <input type="date" class="form__arrival" name="arrival" id="date-arrival">
+  <header class="page-header">
+    <div class="container">
+      <a href="#" class="logo page-header__logo"></a>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="link navigation__link">О нас</a>
           </li>
-          <li class="form__search-item">
-            <label class="form__search-label" for="date-departure">выезд</label>
-            <input type="date" class="departure" name="departure" id="date-departure">
+          <li class="navigation__item">
+            <a href="#" class="link navigation__link">Услуги</a>
           </li>
-          <li class="form__search-item">
-            <label class="form__search-label" for="number-guests" class="">гости</label>
-            <select name="guests" id="number-guests" class="form__search-select">
-              <option value="1">Сколько гостей</option>
-              <option value="2">взрослые</option>
-              <option value="3">дети</option>
-              <option value="4">младенцы</option>
-            </select>
+          <li class="navigation__item">
+            <a href="#" class="link navigation__link">Вакансии</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="link navigation__link">Новости</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="link navigation__link">Соглашения</a>
           </li>
         </ul>
-        <button class="button form__search-button" type="submit">подобрать номер</button>
+      </nav>
+      <div class="page-header__user-office">
+        <a href="#" class="page-header__user-office-sign-in">войти</a>
+        <a href="#" class="page-header__user-office-sign-up">зарегистрироваться</a>
       </div>
-    </form>
-    <p class="page__main-text">Лучшие номера для вашей работы, отдыха и просто вдохновения</p>
+    </div>
+  </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">Поиск жилья для работы и отдыха</h1>
+    <div class="container">
+      <form action="#" class="form">
+        <div class="form__search">
+          <h2 class="form__search-title">Найдём номера под ваши пожелания</h2>
+          <ul class="list form__search-list">
+            <li class="form__search-item">
+              <label class="form__search-label" for="date-arrival">прибытие</label>
+              <input type="date" class="form__arrival" name="arrival" id="date-arrival">
+            </li>
+            <li class="form__search-item">
+              <label class="form__search-label" for="date-departure">выезд</label>
+              <input type="date" class="departure" name="departure" id="date-departure">
+            </li>
+            <li class="form__search-item">
+              <label class="form__search-label" for="number-guests" class="">гости</label>
+              <select name="guests" id="number-guests" class="form__search-select">
+                <option value="1">Сколько гостей</option>
+                <option value="2">взрослые</option>
+                <option value="3">дети</option>
+                <option value="4">младенцы</option>
+              </select>
+            </li>
+          </ul>
+          <button class="button form__search-button" type="submit">подобрать номер</button>
+        </div>
+      </form>
+      <p class="page__main-text">Лучшие номера для вашей работы, отдыха и просто вдохновения</p>
+    </div>
   </main>
-  <footer class="page__footer"></footer>
+  <footer class="page-footer">
+    <div class="container">
+      <div class="page-footer__wrapper-logo">
+        <a href="#" class="logo page-footer__logo"></a>
+        <p class="page-footer-text">
+          Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+        </p>
+      </div>
+      <nav class="navigation navigation__footer">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <h3 class="footer__title navigatin__title">навигация</h3>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigatin__link">О нас</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigatin__link">Новости</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigatin__link">Служба поддержки</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigatin__link">Услуги</a>
+          </li>
+        </ul>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <h3 class="footer__title navigatin__title">о нас</h3>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigatin__link">О сервисе</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigatin__link">Наша команда</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigatin__link">Вакансии</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigatin__link">Инвесторы</a>
+          </li>
+        </ul>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <h3 class="footer__title navigatin__title">Служба поддержки</h3>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigatin__link">Соглашения</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigatin__link">Сообщества</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigatin__link">Связь с нами</a>
+          </li>
+        </ul>
+      </nav>
+      <form class="form form__subscription">
+        <ul class="form__subscription-list">
+          <li class="form__subscription-item">
+            <h3 class="form__subscription-title footer__title">Подписка</h3>
+          </li>
+          <li class="form__subscription-item">
+            <p class="form__subscription-text page__footer-text">
+              Получайте специальные предложения и новости сервиса
+            </p>
+          </li>
+          <li class="form__subscription-item">
+            <input type="text" class="form__subscription-emai" placeholder="Email">
+            <button type="submit" class="form__subscription-button">
+              <span class="visualli-hidden">Кнопка отправки Email</span>
+            </button>
+          </li>
+        </ul>
+      </form>
+      <div class="page-footer__bottom">
+        <p class="page-footer__bottom-text">Copyright &copy; 2018 Toxin отель. Все права зачищены.</p>
+        <ul class="socials">
+          <li class="socials__item">
+            <a href="#" class="socials__icon socials__icon-twitter">
+              <span class="visually-hidden">Twitter</span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__icon socials__icon-facebook">
+              <span class="visually-hidden">Facebook</span></a>
+            </li>
+          <li class="socials__item">
+            <a href="#" class="socials__icon socials__icon-instagram">
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>
