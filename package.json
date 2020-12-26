@@ -1,0 +1,53 @@
+{
+  "name": "fsd",
+  "version": "1.0.0",
+  "description": "*Верстальщик: [Гончаренко Александр](https://github.com/AleksandrGV).\r *Ссылка на проект: [FSD](https://aleksandrgv.github.io/fsd/).",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AleksandrGV/fsd.git"
+  },
+  "author": " (Goncharenko Aleksandr)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AleksandrGV/fsd/issues"
+  },
+  "homepage": "https://github.com/AleksandrGV/fsd#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^5.0.0",
+    "postcss": "^8.2.1",
+    "stylelint": "^13.8.0",
+    "stylelint-config-standard": "^20.0.0",
+    "editorconfig": "0.15.3"
+  },
+  "scripts": {
+    "editorconfig": "editorconfig",
+    "stylelint": "stylelint 'source/sass/**/*.scss' --syntax scss",
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "gulp style",
+    "start": "gulp serve"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11"
+  ],
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "source/*.html",
+    "source/js/**/*.js",
+    "source/img/**/*.svg",
+    "source/less/**/*.less"
+  ],
+  "engines": {
+    "node": "12.18.3"
+  },
+  "dependencies": {}
+}
