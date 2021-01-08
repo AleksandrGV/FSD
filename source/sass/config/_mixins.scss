@@ -1,0 +1,27 @@
+// Примеси
+
+@mixin list-reset() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// Vievport
+
+@mixin mobile-only {
+  @media (max-width: $breakpoints(phone)) {
+    @content();
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $breakpoints(tablet)) {
+    @content();
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $breakpoints(desktop)) {
+    @content();
+  }
+}

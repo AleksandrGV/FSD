@@ -1,0 +1,17 @@
+
+$green: "#6FCF97";
+$purple: "#BC9CFF";
+$cobalt-blue: "#1F2041";
+$purplish-blue: "rgba(31, 32, 65, 0.75)";
+$manatee: "rgba(31, 32, 65, 0.5)";
+$blue-crayola: "rgba(31, 32, 65, 0.25)";
+$pale-blue: "rgba(31, 32, 65, 0.05)";
+
+// Контрольные точки для экранов
+
+$breakpoints: (
+  "phone": 320px,
+  "tablet": 660px,
+  "desktop": 960px,
+  "max-width": 1920px
+);
